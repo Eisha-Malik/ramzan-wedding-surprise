@@ -1,0 +1,643 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fffaf0, #f3e4c9, #fff8eb);
+    color: #76552c;
+    overflow-x: hidden;
+}
+
+.welcome-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.top-text {
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 55px;
+    color: #a27b3f;
+}
+
+.envelope {
+    width: 220px;
+    height: 150px;
+    position: relative;
+    background: #c6a15c;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px #94703c55;
+    margin-bottom: 45px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+}
+
+.envelope-body {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #e6ca91, #b78c45);
+    clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 0 100%);
+}
+
+.envelope-flap {
+    position: absolute;
+    inset: 0;
+    background: #f0d9a9;
+    clip-path: polygon(0 0, 100% 0, 50% 65%);
+    z-index: 2;
+}
+
+.wax-seal {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #8d382f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    z-index: 3;
+    box-shadow: 0 3px 8px #5b2d1b55;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.welcome-screen h1 {
+    font-size: clamp(30px, 6vw, 43px);
+    color: #98713b;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #957b59;
+    margin-bottom: 30px;
+}
+
+button {
+    background: linear-gradient(135deg, #b68b48, #8c622e);
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 20px #9a713c44;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px #9a713c66;
+}
+
+.footer-text {
+    margin-top: 45px;
+    font-size: 13px;
+    color: #a27b3f;
+}
+
+.invitation-screen {
+    min-height: 100vh;
+    padding: 65px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    border: 8px double #c5a15e;
+    margin: 12px;
+    background: #fffaf0;
+}
+
+.invitation-screen h1 {
+    font-size: clamp(35px, 7vw, 55px);
+    color: #a17a3e;
+}
+
+.invitation-screen h2 {
+    letter-spacing: 5px;
+    color: #a17a3e;
+}
+
+.invitation-screen h3 {
+    font-size: 20px;
+}
+
+.bismillah {
+    font-size: 30px;
+    color: #a17a3e;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 480px) {
+    .envelope {
+        width: 190px;
+        height: 130px;
+    }
+
+    .top-text {
+        letter-spacing: 2px;
+    }
+}
+.sparkle,
+.petal {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    font-size: 25px;
+    animation: magicEffect 1.5s ease-out forwards;
+}
+
+.petal {
+    font-size: 30px;
+    animation-duration: 2s;
+}
+
+@keyframes magicEffect {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(0.5) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(1.5) rotate(180deg);
+    }
+}
+/* ROYAL LUXURY WEDDING THEME */
+
+body {
+    background:
+        radial-gradient(ellipse at top, #fffdf5, transparent 70%),
+        linear-gradient(135deg, #f8efd9, #fffaf0, #ead9b5);
+    color: #755323;
+    font-family: 'Playfair Display', serif;
+}
+
+.welcome-screen {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    border: 12px double #c6a15b;
+    outline: 2px solid #e5c987;
+    outline-offset: -22px;
+    background:
+        radial-gradient(circle at center, #fffdf8, #f8efd9);
+    box-shadow: inset 0 0 60px rgba(177, 137, 62, 0.18);
+}
+
+.top-text {
+    color: #a47b36;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.welcome-screen h1 {
+    color: #98702e;
+    font-size: 42px;
+    text-shadow: 1px 2px 8px rgba(180, 140, 60, 0.2);
+}
+
+.subtitle {
+    color: #8b7652;
+    letter-spacing: 1px;
+}
+
+.envelope {
+    filter: drop-shadow(0 15px 18px rgba(119, 83, 28, 0.25));
+    transition: transform 0.5s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.wax-seal {
+    background: radial-gradient(circle, #f4d88d, #a8792e);
+    color: white;
+    box-shadow: 0 0 20px rgba(190, 145, 54, 0.6);
+}
+
+#openInvitation {
+    background: linear-gradient(135deg, #d9b66d, #9e722e);
+    color: white;
+    border: 1px solid #f5dfa8;
+    padding: 16px 32px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 25px rgba(151, 106, 35, 0.3);
+    transition: all 0.3s ease;
+}
+
+#openInvitation:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(151, 106, 35, 0.45);
+}
+
+.footer-text {
+    color: #a47b36;
+}
+/* ROYAL WALIMA INVITATION CARD */
+
+.invitation-screen {
+    position: relative;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 65px 35px;
+    text-align: center;
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(rgba(255,253,246,0.96), rgba(255,248,232,0.96));
+
+    border: 5px double #c5a052;
+    outline: 2px solid #e5cd91;
+    outline-offset: 8px;
+
+    box-shadow:
+        0 15px 50px rgba(126, 91, 38, 0.2),
+        inset 0 0 35px rgba(197, 160, 82, 0.12);
+
+    animation: cardReveal 1.2s ease;
+}
+
+.invitation-screen::before,
+.invitation-screen::after {
+    content: "✿";
+    position: absolute;
+    color: #c39b4d;
+    font-size: 45px;
+}
+
+.invitation-screen::before {
+    top: 12px;
+    left: 18px;
+}
+
+.invitation-screen::after {
+    bottom: 12px;
+    right: 18px;
+}
+
+.invitation-screen .bismillah {
+    font-size: 28px;
+    color: #a27b37;
+    margin-bottom: 30px;
+}
+
+.invitation-screen p {
+    color: #80663e;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.invitation-screen h1 {
+    color: #9b702c;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.invitation-screen h2 {
+    color: #b18a43;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.invitation-screen h3 {
+    color: #80602e;
+    font-size: 19px;
+}
+
+@keyframes cardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .invitation-screen {
+        margin: 25px 18px;
+        padding: 55px 20px;
+    }
+
+    .invitation-screen h1 {
+        font-size: 32px;
+    }
+}
+/* ROYAL MUSIC BUTTON */
+
+.music-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10000;
+
+    background: linear-gradient(135deg, #e5c77d, #a77a32);
+    color: white;
+
+    border: 2px solid #f8e7b7;
+    border-radius: 50px;
+
+    padding: 14px 24px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+
+    box-shadow: 0 5px 25px rgba(151, 106, 35, 0.4);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px rgba(151, 106, 35, 0.6);
+}
+/* SMALL FLOATING MUSIC ICON */
+
+.music-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    bottom: auto;
+    z-index: 10000;
+
+    width: 45px;
+    height: 45px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #e5c77d, #a77a32);
+    color: white;
+    border: 2px solid #f8e7b7;
+    border-radius: 50%;
+
+    font-size: 23px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 18px rgba(151, 106, 35, 0.4);
+    transition: 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.12);
+}
+
+.music-button:active {
+    transform: scale(0.95);
+}
+/* ROYAL SURPRISE GIFT BOX */
+
+.gift-section {
+    margin: 55px auto 25px;
+    text-align: center;
+}
+
+.gift-section h2 {
+    color: #a47b36;
+    font-family: 'Playfair Display', serif;
+}
+
+.gift-box {
+    position: relative;
+    width: 130px;
+    height: 125px;
+    margin: 35px auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 10px 12px rgba(151, 106, 35, 0.3));
+}
+
+.gift-box:hover {
+    transform: translateY(-8px) scale(1.08);
+}
+
+.gift-body {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 85px;
+    background: linear-gradient(135deg, #e8ca83, #a87932);
+    border: 2px solid #f7e3ac;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+.gift-lid {
+    position: absolute;
+    top: 20px;
+    left: -8px;
+    width: 146px;
+    height: 28px;
+    background: linear-gradient(135deg, #f5dda0, #b38a43);
+    border: 2px solid #f7e3ac;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.gift-ribbon {
+    position: absolute;
+    top: 20px;
+    left: 52px;
+    width: 25px;
+    height: 105px;
+    background: #fff0c5;
+    z-index: 3;
+    opacity: 0.85;
+}
+
+.gift-message {
+    max-width: 430px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #fffaf0;
+    border: 2px solid #c5a052;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(151, 106, 35, 0.15);
+    animation: cardReveal 1s ease;
+}
+
+.gift-message p {
+    line-height: 1.9;
+    color: #80663e;
+}
+
+.gift-message h2 {
+    color: #a47b36;
+}
+
+.gift-section > p {
+    color: #98702e;
+    font-size: 14px;
+}
+/* GIFT BOX OPENING ANIMATION */
+
+.gift-box.gift-open {
+    transform: scale(1.2);
+    animation: giftMagic 0.8s ease;
+}
+
+.gift-box.gift-open .gift-lid {
+    transform: translateY(-35px) rotate(-15deg);
+    transition: transform 0.7s ease;
+}
+
+.gift-box.gift-open .gift-body {
+    box-shadow: 0 0 35px rgba(218, 177, 91, 0.7);
+}
+
+@keyframes giftMagic {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3) rotate(8deg);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+/* Guest Wishes Section */
+
+.wishes-section {
+    max-width: 650px;
+    margin: 60px auto 30px;
+    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #d6b56d;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(150, 110, 40, 0.15);
+    text-align: center;
+}
+
+.wishes-section h2 {
+    color: #a67c35;
+    margin-bottom: 15px;
+}
+
+.wishes-section p {
+    color: #705b3e;
+    line-height: 1.7;
+}
+
+#wishForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+#wishForm input,
+#wishForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #d6b56d;
+    border-radius: 10px;
+    background: #fffdf8;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+#wishForm input:focus,
+#wishForm textarea:focus {
+    border-color: #a67c35;
+    box-shadow: 0 0 8px rgba(166, 124, 53, 0.2);
+}
+
+#wishForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#wishForm button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #d6b56d, #a67c35);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#wishesList {
+    margin-top: 35px;
+}
+
+#wishesList h2 {
+    margin-bottom: 20px;
+}
+/* Individual Guest Wish Cards */
+
+.wish-card {
+    background: #fffdf8;
+    border: 1px solid #d6b56d;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 15px 0;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(150, 110, 40, 0.10);
+}
+
+.wish-card h3 {
+    color: #a67c35;
+    margin-bottom: 8px;
+}
+
+.wish-card p {
+    color: #705b3e;
+    overflow-wrap: anywhere;
+}

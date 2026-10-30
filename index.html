@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Ramzan | Wedding Invitation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="sparkles" id="sparkles"></div>
+
+    <!-- Welcome Screen -->
+    <section class="welcome-screen" id="welcomeScreen">
+
+        <p class="top-text">YOU ARE CORDIALLY INVITED</p>
+
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-body">
+                <div class="wax-seal">♥</div>
+            </div>
+        </div>
+
+        <h1>A Special Invitation</h1>
+
+        <p class="subtitle">
+            A beautiful celebration awaits you
+        </p>
+
+        <button id="openInvitation">
+            OPEN YOUR INVITATION ✨
+        </button>
+
+        <p class="footer-text">
+            With love & blessings ❤️
+        </p>
+
+    </section>
+
+
+    <!-- Invitation Screen -->
+    <section class="invitation-screen" id="invitationScreen" hidden>
+
+        <!-- Background Music -->
+        <audio id="backgroundMusic" loop>
+            <source src="assets/music/wedding-beat.mp3" type="audio/mpeg">
+        </audio>
+
+        <button
+            id="musicButton"
+            class="music-button"
+            aria-label="Play or pause music">
+            ♫
+        </button>
+
+        <p class="bismillah">
+            بسم اللہ الرحمن الرحیم
+        </p>
+
+        <p>Haji Umar Daraz</p>
+
+        <p>
+            cordially invites you to celebrate the Walima
+            of his beloved son
+        </p>
+
+        <h1>Muhammad Ramzan</h1>
+
+        <h2>WALIMA CEREMONY</h2>
+
+        <h3>7 November 2026 | Saturday</h3>
+
+        <p>Blossom Marquee, Jhang</p>
+
+        <p>
+            Your presence will make our celebration special ❤️
+        </p>
+
+
+        <!-- Gift Surprise -->
+        <div class="gift-section">
+
+            <h2>A Special Surprise For You</h2>
+
+            <div class="gift-box" id="giftBox">
+
+                <div class="gift-lid"></div>
+
+                <div class="gift-ribbon"></div>
+
+                <div class="gift-body">🎁</div>
+
+            </div>
+
+            <p>Tap the gift to reveal a blessing ✨</p>
+
+            <div class="gift-message" id="giftMessage" hidden>
+
+                <h2>With Love & Duas ❤️</h2>
+
+                <p>
+                    May Allah bless Muhammad Ramzan with endless happiness,
+                    beautiful memories, a lifetime of love and countless
+                    blessings. Ameen!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Guest Wishes Section -->
+        <div class="wishes-section">
+
+            <h2>Share Your Love & Wishes 💌</h2>
+
+            <p>
+                Leave a beautiful message for the happy couple.
+            </p>
+
+            <form id="wishForm">
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Enter your name"
+                    maxlength="50"
+                    required
+                >
+
+                <textarea
+                    id="guestWish"
+                    placeholder="Write your heartfelt wishes..."
+                    maxlength="500"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    SEND YOUR WISH ❤️
+                </button>
+
+            </form>
+
+            <!-- Guest Wishes Display -->
+            <div id="wishesList">
+
+                <h2>Love From Our Guests 💕</h2>
+
+                <p id="wishesLoading">
+                    Beautiful wishes will appear here ✨
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <script type="module" src="js/firebase.js"></script>
+
+</body>
+</html>
